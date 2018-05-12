@@ -13,11 +13,11 @@ MAIN_DIR = os.getcwd()
 import os
 import platform
 if platform.system() == 'Windows':
-	separator = '\\'
-	TRAIN_DIR = os.getcwd() + separator + 'jpg'
+    separator = '\\'
+    TRAIN_DIR = os.getcwd() + separator + 'jpg'
 else:
-	separator = '/'
-	TRAIN_DIR = os.getcwd() + separator + 'jpg'
+    separator = '/'
+    TRAIN_DIR = os.getcwd() + separator + 'jpg'
 
 #Changing directories to where images are.
 os.chdir(TRAIN_DIR)
@@ -66,12 +66,9 @@ tf.reset_default_graph()
 def batch_normalization(input, name='bn'):
     
     with tf.variable_scope(name):
-    
         output_dim = input.get_shape()[-1]
-        beta = tf.get_variable('BnBeta', [output_dim],
-                            initializer=tf.zeros_initializer())
-        gamma = tf.get_variable('BnGamma', [output_dim],
-                            initializer=tf.ones_initializer())
+        beta = tf.get_variable('BnBeta', [output_dim], initializer=tf.zeros_initializer())
+        gamma = tf.get_variable('BnGamma', [output_dim], initializer=tf.ones_initializer())
     
         if len(input.get_shape()) == 2:
             mean, var = tf.nn.moments(input, [0])
