@@ -287,7 +287,7 @@ for i in range(num_epoch):
         fig = plt.figure(figsize=(8, 8))
         for m in range(1, columns*rows +1):
             img = images[m-1].reshape([64, 64, 3])
-			generated_photos.append(img)
+	    generated_photos.append(img)
             fig.add_subplot(rows, columns, m)
             plt.imshow(img)
         plt.show()
