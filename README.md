@@ -49,6 +49,6 @@ Images are resized to (64,64,3) . The architecture is below:
 ![alt text](https://cdn-images-1.medium.com/max/1800/1*JnUzBXe5Zq-HT--iNKrCuQ.png) 
 
 # Generated Photos
-Predictions for first 64 testing images are below. Each picture contains 16 generated photos.
+Each picture contains 16 generated photos. I trained it 100 epochs and obtained outputs 1 in 2 epochs.
 
 ![alt text](https://github.com/MuhammedBuyukkinaci/FlowerGAN/blob/master/generated_photos.gif)
