@@ -13,11 +13,13 @@ or
 
 ```git clone https://github.com/MuhammedBuyukkinaci/FlowerGAN.git```
 
-```cd FlowerGAN```
+```cd ./FlowerGAN```
 
 ```python FlowerGAN.py ```
 
-# Jupyter Notebook
+# Notebook
+
+You can  download .ipynb file from [here](https://github.com/MuhammedBuyukkinaci/My-Jupyter-Files-1/blob/master/FLOWER_dcgan.ipynb).
 
 ```jupyter lab ``` or ```jupyter notebook ```
 
