@@ -1,5 +1,5 @@
 # FlowerGAN
-FlowerGAN : A DCGAN implementation in TensorFlow in Python 3 on Caltech-UCSD Birds dataset.
+FlowerGAN : A DCGAN implementation in TensorFlow in Python 3 on 102 Category Flower Dataset.
 
 # Dependencies
 
