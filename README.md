@@ -24,7 +24,8 @@ or
 # Data
 No MNIST or CIFAR-10. 
 
-This is a repository containing datasets of 5200 training images of 4 classes and 1267 testing images.No problematic image.
+This is a repository containing datasets of 8189 flower pictures belonging to 102 different categories. We aren't interested in 
+categories because GAN's is an UNSUPERVISED Machine Learning model.
 
 Download .tgz extension version from [here](
 http://www.robots.ox.ac.uk/~vgg/data/flowers/102/) or .npy extension version from [here](
@@ -35,12 +36,12 @@ If you downloaded the dataset, extract files from 102flowers.tgz . Then put it i
 If you download .npy file from Dropbox, put flower_photos.npy in FlowerGAN folder.
 
 # GPU
-I trained on GTX 1050. 1 epoch lasted 7-8 minutes. I left my laptop overnight and obtained outputs.
+I trained on GTX 1050. 1 epoch lasted 7-8 minutes. I left my laptop overnight and obtained outputs in the morning.
 
 If you don't want to wait for one month, use a GPU.
 
 # Architecture
-Images are resized to (64,64,3) .
+Images are resized to (64,64,3) . The architecture is below:
 
 ![alt text](https://cdn-images-1.medium.com/max/1800/1*JnUzBXe5Zq-HT--iNKrCuQ.png) 
 
