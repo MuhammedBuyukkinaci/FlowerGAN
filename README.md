@@ -28,21 +28,16 @@ This is a repository containing datasets of 5200 training images of 4 classes an
 
 Download .tgz extension version from [here](
 http://www.robots.ox.ac.uk/~vgg/data/flowers/102/) or .npy extension version from [here](
-https://www.dropbox.com/s/20jkiactn0k5sss/multiclass_datasets_zip.zip?dl=0). It is 67 MB.
+https://www.dropbox.com/s/gmu2cxgjktcnw40/flower_photos.npy?dl=0). It is about 95 MB.
 
-Extract files from multiclass_datasets.rar. Then put it in TensorFlow-Multiclass-Image-Classification-using-CNN-s folder.
-train_data_bi.npy is containing training photos with labels.
+If you downloaded the dataset, extract files from 102flowers.tgz . Then put it in FlowerGAN folder.
 
-test_data_bi.npy is containing 1267 testing photos with labels.
-
-Classes are chair & kitchen & knife & saucepan.
-
-Classes are equal(1300 glass - 1300 kitchen - 1300 knife- 1300 saucepan) on training data. 
+If you download .npy file from Dropbox, put flower_photos.npy in FlowerGAN folder.
 
 # GPU
-I trained on GTX 1050. 1 epoch lasted 7-8 minutes approximately.
+I trained on GTX 1050. 1 epoch lasted 7-8 minutes. I left my laptop overnight and obtained outputs.
 
-If you don't want to wait for a month, use a GPU.
+If you don't want to wait for one month, use a GPU.
 
 # Architecture
 Images are resized to (64,64,3) .
@@ -50,6 +45,6 @@ Images are resized to (64,64,3) .
 ![alt text](https://cdn-images-1.medium.com/max/1800/1*JnUzBXe5Zq-HT--iNKrCuQ.png) 
 
 # Generated Photos
-Predictions for first 64 testing images are below. Titles are  the predictions of our Model.
+Predictions for first 64 testing images are below. Each picture contains 16 generated photos.
 
 ![alt text](https://github.com/MuhammedBuyukkinaci/FlowerGAN/blob/master/generated_photos.gif)
