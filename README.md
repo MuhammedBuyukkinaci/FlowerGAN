@@ -39,7 +39,7 @@ If you downloaded the dataset, extract files from 102flowers.tgz .Then put it in
 If you download .npy file from Dropbox, put flower_photos.npy in FlowerGAN folder.
 
 # GPU
-I trained on GTX 1050. 1 epoch lasted 7-8 minutes. I left my laptop overnight and obtained outputs in the morning.
+I trained on GTX 1050. 1 epoch lasted 6-7 minutes. I left my laptop overnight and obtained outputs in the morning.
 
 If you don't want to wait for one month, use a GPU.
 
