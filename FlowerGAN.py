@@ -4,6 +4,7 @@ import os                  # dealing with directories
 from random import shuffle
 from tqdm import tqdm      # Cool for loops.
 import tensorflow as tf # For graphical operations
+import datetime
 
 # our photos are in the size of IMG_SIZE,IMG_SIZE,3
 IMG_SIZE = 64
