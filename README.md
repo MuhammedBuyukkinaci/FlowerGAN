@@ -52,4 +52,4 @@ Images are resized to (64,64,3) .
 # Generated Photos
 Predictions for first 64 testing images are below. Titles are  the predictions of our Model.
 
-![alt text](https://github.com/MuhammedBuyukkinaci/TensorFlow-Multiclass-Image-Classification-using-CNN-s/blob/master/mc_preds.png)
+![alt text](https://github.com/MuhammedBuyukkinaci/FlowerGAN/blob/master/generated_photos.gif)
