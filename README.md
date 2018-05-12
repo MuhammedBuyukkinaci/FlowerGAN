@@ -24,14 +24,15 @@ or
 # Data
 No MNIST or CIFAR-10. 
 
-This is a repository containing datasets of 8189 flower pictures belonging to 102 different categories. We aren't interested in 
+This is a repository containing datasets of 8189 flower pictures belonging to 102 different categories. We aren't interested in
+
 categories because GAN's is an UNSUPERVISED Machine Learning model.
 
 Download .tgz extension version from [here](
 http://www.robots.ox.ac.uk/~vgg/data/flowers/102/) or .npy extension version from [here](
 https://www.dropbox.com/s/gmu2cxgjktcnw40/flower_photos.npy?dl=0). It is about 95 MB.
 
-If you downloaded the dataset, extract files from 102flowers.tgz . Then put it in FlowerGAN folder.
+If you downloaded the dataset, extract files from 102flowers.tgz .Then put it in FlowerGAN folder.
 
 If you download .npy file from Dropbox, put flower_photos.npy in FlowerGAN folder.
 
