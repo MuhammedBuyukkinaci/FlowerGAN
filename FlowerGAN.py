@@ -1,9 +1,9 @@
-import cv2                 # working with, mainly resizing, images
-import numpy as np         # dealing with arrays
-import os                  # dealing with directories
+import cv2# image processing
+import numpy as np# dealing with multidimensional arrays
+import os # dealing with directories
 from random import shuffle
-from tqdm import tqdm      # Cool for loops.
-import tensorflow as tf # For graphical operations
+from tqdm import tqdm #Progress bar for loops.
+import tensorflow as tf # For tensor operations
 import datetime
 
 # our photos are in the size of IMG_SIZE,IMG_SIZE,3
@@ -13,12 +13,7 @@ MAIN_DIR = os.getcwd()
 
 import os
 import platform
-if platform.system() == 'Windows':
-    separator = '\\'
-    TRAIN_DIR = os.getcwd() + separator + 'jpg'
-else:
-    separator = '/'
-    TRAIN_DIR = os.getcwd() + separator + 'jpg'
+TRAIN_DIR = os.path.join(MAIN_DIR, 'jpg')
 
 #Changing directories to where images are.
 os.chdir(TRAIN_DIR)
@@ -52,7 +47,6 @@ plt.imshow(np.array(flower_data[1451]))
 
 #Reshaping
 X = np.array([i for i in flower_data]).reshape(-1,IMG_SIZE,IMG_SIZE,3)
-
 print(X.shape)
 
 #Hyperparameters
@@ -165,7 +159,6 @@ def generator(input_x, batch_size):
 z_dimensions = 100
 z_placeholder = tf.placeholder(tf.float32, shape=(None, 4, 4, z_dimensions))	
 		
-
 generated_image_output = generator(z_placeholder, bs)
 z_batch = np.random.normal(0, 1, [bs, 4,4,z_dimensions])
 
